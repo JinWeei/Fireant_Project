@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dip">
+
+    <TextView
+        android:id="@+id/topics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingLeft="15dp"
+        android:hint="Posted by..."
+        android:textColor="@color/black"
+        android:layout_toLeftOf="@+id/upVote"/>
+
+    <TextView
+        android:id="@+id/details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textColor="@color/black"
+        android:layout_below="@+id/topics"
+        android:ellipsize="none"
+        android:layout_toLeftOf="@+id/upVote"/>
+
+    <Button
+        android:id="@+id/upVote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="10dp"
+        android:minWidth="56dp"
+        android:text="Up"
+        android:textSize="10sp"
+        android:layout_gravity="end"
+        android:layout_toLeftOf="@+id/downVote"
+        android:layout_toStartOf="@+id/downVote" />
+
+    <Button
+        android:id="@+id/downVote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="56dp"
+        android:text="Down"
+        android:textSize="10sp"
+        android:textAlignment="viewEnd"
+        android:layout_gravity="end"
+        android:layout_alignParentRight="true"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@+id/details"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
